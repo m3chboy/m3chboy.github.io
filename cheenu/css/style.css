@@ -870,7 +870,6 @@ footer box
     background-color: #FFFFFF;
     border-radius: 5px;
     margin: 20px;
-    cursor: pointer;
     transition: 1s ease;
 }
 
@@ -886,6 +885,7 @@ footer box
 .faq__inner_box span {
     padding: 20px 40px;
     transition: 1s ease;
+    cursor: pointer;
 }
 
 .faq__box .pannel {
