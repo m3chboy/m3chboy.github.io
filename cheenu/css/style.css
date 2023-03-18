@@ -613,15 +613,21 @@ Service
     color: #6B6B84;
 }
 
-.card1::after,
-.card1::before {
+.card:hover::after,
+.card:hover::before {
     transform: translateY(0);
 }
 
-.ctest {
+.card:hover .card__body {
     opacity: 1;
     transition-delay: 0.75s;
 }
+
+
+/* .ctest {
+    opacity: 1;
+    transition-delay: 0.75s;
+} */
 
 .inner-box {
     width: 350px;
@@ -647,6 +653,10 @@ Service
 
 .card:hover .inner-box {
     background-position: 0 0;
+}
+
+.card:hover .inner-box {
+    display: none;
 }
 
 .inner-box h1 {
