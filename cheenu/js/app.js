@@ -59,21 +59,21 @@ navBtnDOMb.addEventListener('click', () => {
 
 // ========== click =========
 
-var acc = document.getElementsByClassName("card");
-var i;
+// var acc = document.getElementsByClassName("card");
+// var i;
 
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
+// for (i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener("click", function() {
 
-        this.classList.toggle('card1')
-        var cBody = this.firstElementChild;
-        cBody.classList.toggle('carddis')
-            // console.log(cBody)
-        var cText = cBody.nextElementSibling;
-        cText.classList.toggle('ctest')
-    });
-}
+//         this.classList.toggle('card1')
+//         var cBody = this.firstElementChild;
+//         cBody.classList.toggle('carddis')
+//             // console.log(cBody)
+//         var cText = cBody.nextElementSibling;
+//         cText.classList.toggle('ctest')
+//     });
+// }
 
 
 
