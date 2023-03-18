@@ -42,16 +42,13 @@ nav
     align-items: center;
     justify-content: space-between;
     /* border: #000000 solid 2px; */
-    padding: 40px 70px;
+    padding: 40px 70px 0 70px;
 }
 
 #navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* right: 0; */
-    /* width: 50vw; */
-    /* border: #000000 solid 2px; */
 }
 
 #navbar li {
@@ -120,7 +117,7 @@ hero
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 70px 0 70px;
+    padding: 0 70px 0 70px;
 }
 
 #hero .hero-text {
@@ -174,7 +171,6 @@ hero
 }
 
 #hero .hero-img {
-    padding-top: 10px;
     width: 50%;
 }
 
@@ -196,7 +192,7 @@ Bank
     justify-content: space-between;
     padding: 10px 48px 0 48px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 40px;
     /* border: #009EFF solid 2px; */
 }
 
@@ -240,7 +236,7 @@ welcome
     align-items: center;
     justify-content: space-between;
     padding: 10px 70px 0 70px;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 #welcome .wc-img {
@@ -307,7 +303,7 @@ Calculator
     align-items: flex-start;
     justify-content: space-between;
     padding: 10px 70px 0 70px;
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
 #calculator .cal-input {
@@ -437,7 +433,7 @@ Guest
 #guest #g-text {
     /* border: #000000 solid 2px; */
     width: 47%;
-    padding: 40px 77px 40px 0px;
+    padding: 40px 60px 40px 0px;
 }
 
 #guest #g-text ul #list-head {
@@ -622,12 +618,6 @@ Service
     opacity: 1;
     transition-delay: 0.75s;
 }
-
-
-/* .ctest {
-    opacity: 1;
-    transition-delay: 0.75s;
-} */
 
 .inner-box {
     width: 350px;
@@ -894,9 +884,9 @@ footer box
 }
 
 .faq__box .pannel p {
-    font-family: Open Sans;
+    font-family: Helvetica;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 34px;
     color: #50597B;
     padding-bottom: 5px;
@@ -908,7 +898,7 @@ footer box
 
 .faq__box .pannel li p {
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
@@ -937,7 +927,7 @@ Contact
 
 .contact {
     margin-top: 100px;
-    border: rgb(190, 186, 186) solid 0.001em;
+    border: #DCDEED solid 0.001em;
     border-right: none;
     border-left: none;
     width: 90%;
@@ -1063,16 +1053,15 @@ Copy
 #footer__box .copy {
     width: 90%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     /* flex-wrap: wrap; */
     text-align: center;
 }
 
 #footer__box .copy p {
     font-family: Helvetica;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     /* line-height: 22px; */
     letter-spacing: 0em;
@@ -1084,7 +1073,7 @@ Copy
 #footer__box .copy a {
     text-decoration: none;
     font-family: Nunito, sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
     /* line-height: 20px; */
     color: #7F839C;
@@ -1508,6 +1497,16 @@ Copy
     .con__r .b__row {
         padding-right: 30px;
     }
+    #footer__box .copy {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #footer__box .copy p {
+        font-size: 12px;
+    }
+    #footer__box .copy a {
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1655,11 +1654,11 @@ Copy
     }
     #guest {
         padding: 0;
-        margin: 60px 0 0 0;
+        margin: 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 20px 20px;
+        padding: 0 20px;
     }
     #guest #g-img {
         width: 80%;
@@ -1670,7 +1669,7 @@ Copy
     }
     #guest #g-text {
         width: 100%;
-        padding: 20px 5px;
+        padding: 0 5px;
     }
     #service {
         width: 100%;
