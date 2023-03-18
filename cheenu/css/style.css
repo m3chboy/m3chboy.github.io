@@ -482,7 +482,7 @@ Service
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 #service .s-head {
@@ -560,8 +560,8 @@ Service
     z-index: -1;
     width: 100%;
     height: calc(60% + 39px);
-    background-color: #fff;
-    transition: transform 0.5s 0.25s;
+    background-color: #ffffff;
+    /* transition: transform 0.5s 0.25s; */
 }
 
 .card::before {
@@ -616,7 +616,7 @@ Service
 
 .card:hover .card__body {
     opacity: 1;
-    transition-delay: 0.75s;
+    transition-delay: 0.2s;
 }
 
 .inner-box {
@@ -708,8 +708,8 @@ td {
 }
 
 .fout i {
-    font-size: 10px;
-    color: #000000;
+    font-size: 7px;
+    color: #6B6B84;
 }
 
 
@@ -793,7 +793,7 @@ footer box
 */
 
 #footer__box {
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -805,6 +805,8 @@ footer box
 
 .faq {
     width: 77%;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .faq__header {
@@ -936,6 +938,8 @@ Contact
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 0px;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .con__l {
@@ -1051,6 +1055,8 @@ Copy
 */
 
 #footer__box .copy {
+    max-width: 1400px;
+    margin: auto;
     width: 90%;
     display: flex;
     align-items: center;
@@ -1152,9 +1158,12 @@ Copy
 }
 
 @media (max-width: 992px) {
+    #header {
+        padding: 40px 30px 0 30px;
+    }
     #navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         padding: 0;
         position: fixed;
@@ -1203,43 +1212,45 @@ Copy
         /* height: 70vh; */
         justify-content: space-between;
         flex-wrap: wrap;
-        padding-top: 30px;
+        padding: 0 30px;
     }
     #hero .hero-text {
         width: 50%;
         padding: 10px 0 0 0;
-        /* border: #000000 solid 2px; */
     }
     #hero .hero-text h1 {
-        font-size: 28px;
+        font-size: 24px;
         padding-bottom: 20px;
         max-width: 500px;
-        line-height: 40px;
-        /* margin-bottom: 15px; */
+        line-height: 32px;
     }
     #hero .hero-text p {
-        font-size: 17px;
-        line-height: 30px;
+        font-size: 14px;
+        line-height: 22px;
     }
     #hero .hero-text button {
         font-size: 13px;
-        padding: 15px 15px;
-        margin-top: 75px;
+        padding: 12px 25px;
+        margin-top: 30px;
+        font-weight: 600;
     }
     #hero .hero-img {
-        /* border: #000000 solid 2px; */
         width: 50%;
+        padding: 0;
     }
     #hero .hero-img img {
         width: 100%;
-        /* padding-top: 60px; */
+        padding: 0;
     }
     #bank {
-        padding: 80px 0px 40px 20px;
+        padding: 40px 0px 40px 20px;
         overflow: hidden;
+        margin-top: 0;
+    }
+    #bank .b_hide {
+        display: none;
     }
     #bank .b-box {
-        /* width: 120px; */
         margin-right: 10px;
         height: 40px;
     }
@@ -1354,7 +1365,9 @@ Copy
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 0px 0 0 0;
+        padding: 0;
+        margin-top: 70px;
+        text-align: center;
         /* border: #000000 solid 2px; */
     }
     #service .s-head {
@@ -1446,6 +1459,9 @@ Copy
         line-height: 0px;
         width: 150px;
         height: 40px;
+    }
+    #footer_box {
+        margin-top: 70px;
     }
     .faq {
         width: 85%;
@@ -1540,7 +1556,7 @@ Copy
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 30px 10px 10px 10px;
+        padding: 30px 10px 10px 20px;
         margin-bottom: 30px;
     }
     #hero .hero-text {
@@ -1563,12 +1579,10 @@ Copy
         padding: 10px 20px;
         line-height: 0;
         /* width: 60%; */
-        margin: 60px 0 0px 30px;
+        margin: 60px 0 0px 0px;
     }
     #hero .hero-img {
         width: 100%;
-        /* height: 40%; */
-        /* border: #000000 solid 2px; */
     }
     #hero .hero-img img {
         width: 100%;
